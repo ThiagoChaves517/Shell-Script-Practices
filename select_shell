@@ -1,0 +1,14 @@
+select fruta in Banana Pera Maça Abil STOP; do
+    if [ "$fruta" == "" ]; then 
+       echo "Entrada invalida"
+       echo
+       continue
+   elif  [ "$fruta" == STOP ]; then
+       echo "Obrigado por jogar"
+       break
+   fi
+
+   echo "Sua escolha foi :  $fruta"
+   echo "Aqui o número da opção escolhida $REPLY"
+   echo 
+done

@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Grupos : "
+
+for gid in $(id -G); do
+   grupo=$(cat /etc/group | grep ":$gid:" | cut -f1 -d":") 
+   echo "${gid}: ${grupo}"
+done

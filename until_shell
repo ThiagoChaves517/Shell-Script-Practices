@@ -1,0 +1,14 @@
+#!/bin/bash
+
+secretname="zygarde"
+name=
+echo "Tente adivinhar o nome secreto! Dica: É um Pokémon."
+echo 
+
+until [ "$name" = "$secretname" ]; do 
+   echo -n "Adivinhe: "
+   read name
+done
+
+echo "Muito bom, Parabéns"
+

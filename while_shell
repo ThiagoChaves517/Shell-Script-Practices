@@ -1,0 +1,7 @@
+#!/bin/bash
+
+conta=1
+while [ $conta -le 5 ]; do
+    echo $conta
+    conta=$((conta + 1))
+done
